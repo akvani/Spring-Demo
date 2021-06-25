@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="projbean" class="com.org.FirstApplication.Project">
+<property name="projid" value="P01"/>
+<property name="projdescrip" value="Banking project"/>
+</bean>
+
+
+
+<bean id="empbean" class="com.org.FirstApplication.Employee" >
+<property name="empid" value="E01"/>
+<property name="salary" value="5000"/>
+
+<property name="project" ref="projbean"/> <!--  property based DI -->
+</bean>
+
+<bean id="empbean1" class="com.org.FirstApplication.Employee">
+
+<constructor-arg name="proj"  ref="projbean"/> <!--  Constructor based DI -->
+<constructor-arg index="1" value="E003"/>
+
+<property name="empid" value="E02"/>
+<property name="salary" value="6000"/>
+
+<property name="address">
+<map>
+<entry key="city" value="blore"/>
+<entry key="state" value="karnataka"/>
+
+</map>
+
+
+</property>
+
+</bean>
+
+
+
+</beans>

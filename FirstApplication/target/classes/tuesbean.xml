@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean id="project" class="com.org.FirstApplication.Project" scope="singleton">
+<property name="projid" value="P01"/>
+<property name="projdescrip" value="Insurance project"/>
+</bean>
+
+<bean id="project1" class="com.org.FirstApplication.Project">
+<property name="projid" value="P01"/>
+<property name="projdescrip" value="Insurance project"/>
+</bean>
+
+
+<!--  
+<bean id="empbean" class="com.org.FirstApplication.Employee" autowire="byName">
+<property name="empname" value="Annu"></property>
+<property name="salary" value="10000"/>
+</bean>
+-->
+
+
+<bean id="empbean" class="com.org.FirstApplication.Employee" autowire="byName" scope="singleton" init-method="displayCount" 
+										destroy-method="closeFile">
+										
+<property name="empname" value="Annu"></property>
+<property name="salary" value="10000"/>
+</bean>
+
+<bean class="com.org.FirstApplication.PostBeanProcess"/>
+
+
+
+</beans>
