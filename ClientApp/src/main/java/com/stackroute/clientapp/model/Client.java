@@ -1,10 +1,18 @@
 package com.stackroute.clientapp.model;
 
+import java.time.LocalDateTime;
+
 public class Client {
 	
 	String clientid;
 	String clientname;
 	String location;
+	LocalDateTime publishtime;
+	
+	public Client()
+	{
+		publichtime=LocalDateTime.now();
+	}
 	
 	public String getClientid() {
 		return clientid;
