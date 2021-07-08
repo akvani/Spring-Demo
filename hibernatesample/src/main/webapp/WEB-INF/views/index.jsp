@@ -8,6 +8,10 @@
 
 <body>
 
+
+My Data is ${data}
+
+
 <h4> Purchase Book</h4>
 <form method="post" action="addbook" modelAttribute="bookobj">
 
@@ -33,8 +37,8 @@ Enter customername <input type=text name="bookname"><br>
 <td>${bookobj.bookid}</td>
 <td>${bookobj.bookname}</td>
  
-<td><a href="deleteclient?qryid=${bookobj.bookid}">Delete</a></td>
-<td><a href="viewclient?qryid=${bookobj.bookid}">Modify</a> </td>
+<td><a href="deletebook?qryid=${bookobj.bookid}">Delete</a></td>
+<td><a href="viewbook?qryid=${bookobj.bookid}">Modify</a> </td>
 <tr>
 </c:forEach>
 
@@ -42,15 +46,17 @@ Enter customername <input type=text name="bookname"><br>
 
 </table>
 
+ 
+<form action="updatebook" modelAttribute="bookmodi">
 
-<form action="update" modelAttribute="clientmodi">
+Enter Bookid <input type=text name="bookid" value=${bookresult.bookid}><br>
+Enter bookname <input type=text name="bookname" value=${bookresult.bookname}><br>
 
-Enter Customerid <input type=text name="clientid" value=${clientfound.clientid}><br>
-Enter customername <input type=text name="clientname" value=${clientfound.clientname}><br>
-Enter Location <input type=text name="location" value=${clientfound.location}><br>
 
-<button type=submit>Modify Client</button>
+<button type=submit>Update Book</button>
 </form>
 
+ 
+ 
 </body>
 </html>

@@ -11,7 +11,7 @@ public class Client {
 	
 	public Client()
 	{
-		publichtime=LocalDateTime.now();
+		publishtime=LocalDateTime.now();
 	}
 	
 	public String getClientid() {
