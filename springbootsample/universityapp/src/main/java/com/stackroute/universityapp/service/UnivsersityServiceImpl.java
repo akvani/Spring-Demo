@@ -84,6 +84,15 @@ public class UnivsersityServiceImpl implements UniversityService {
 		
 		return unirepo.findAll();
 	}
+
+	@Override
+	public University finduniversitybyname(String uname) {
+	
+	University universe=unirepo.findByUniversityname(uname);
+		
+		
+		return universe;
+	}
 	
 	
 

@@ -28,13 +28,20 @@ public class UniversityController {
 	UniversityService userve;
 	
 	
+	@GetMapping("/showdetails/{uniname}")
+	public ResponseEntity<?> getuniversitydetails(@PathVariable("uniname") String uname)
+	{
+		University uobj=userve.finduniversitybyname(uname);
+		return new ResponseEntity<University>(uobj,HttpStatus.OK);
+	}
+	
 	@PostMapping("/addUniversity")
 	
 	public ResponseEntity<?> saveuniverse(@RequestBody University uninew)
 	{
 		try {
 		University uniresult=userve.addUniversity(uninew);
-			return new ResponseEntity<University>(uniresult,HttpStatus.CREATED);
+			return new ResponseEntity<University>(uniresult,HttpStatus.OK);
 		} 
 		catch (UniversityAlreadyExistException e) {
 			 

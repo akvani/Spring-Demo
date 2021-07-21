@@ -8,5 +8,6 @@ import com.stackroute.universityapp.model.University;
 @Repository
 public interface UniversityRepo extends JpaRepository<University,String>{
 	
-
+  University findByUniversityname(String uname);
+  
 }

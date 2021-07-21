@@ -18,5 +18,7 @@ University modifyUniversity(University universe) throws UniversityNotFoundExcept
 
 List<University> getallUniversitites();
 
+University finduniversitybyname(String uname);
+
 
 }

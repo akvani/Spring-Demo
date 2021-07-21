@@ -1,0 +1,58 @@
+2021-07-21 16:34:00 [main] INFO  c.s.u.UniversityappApplication -
+				Starting UniversityappApplication using Java 1.8.0_261 on BLR-STR-MARY with PID 17504 (E:\01-IBM-Java-PT\spring-sample\springbootsample\universityapp\target\classes started by Mary.Rani in E:\01-IBM-Java-PT\spring-sample\springbootsample\universityapp)
+2021-07-21 16:34:01 [main] INFO  c.s.u.UniversityappApplication -
+				No active profile set, falling back to default profiles: default
+2021-07-21 16:34:01 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+				Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-21 16:34:02 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+				Finished Spring Data repository scanning in 74 ms. Found 2 JPA repository interfaces.
+2021-07-21 16:34:03 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+				Tomcat initialized with port(s): 9092 (http)
+2021-07-21 16:34:03 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+				Initializing ProtocolHandler ["http-nio-9092"]
+2021-07-21 16:34:03 [main] INFO  o.a.catalina.core.StandardService -
+				Starting service [Tomcat]
+2021-07-21 16:34:03 [main] INFO  o.a.catalina.core.StandardEngine -
+				Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-21 16:34:03 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+				Initializing Spring embedded WebApplicationContext
+2021-07-21 16:34:03 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -
+				Root WebApplicationContext: initialization completed in 2641 ms
+2021-07-21 16:34:04 [main] INFO  o.h.jpa.internal.util.LogHelper -
+				HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-21 16:34:04 [main] INFO  org.hibernate.Version -
+				HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-21 16:34:04 [main] INFO  o.h.annotations.common.Version -
+				HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-21 16:34:04 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Starting...
+2021-07-21 16:34:05 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Start completed.
+2021-07-21 16:34:05 [main] INFO  org.hibernate.dialect.Dialect -
+				HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-07-21 16:34:08 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -
+				HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-21 16:34:08 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -
+				Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-21 16:34:09 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -
+				spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-21 16:34:09 [main] INFO  o.a.coyote.http11.Http11NioProtocol -
+				Starting ProtocolHandler ["http-nio-9092"]
+2021-07-21 16:34:09 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -
+				Tomcat started on port(s): 9092 (http) with context path ''
+2021-07-21 16:34:09 [main] INFO  c.s.u.UniversityappApplication -
+				Started UniversityappApplication in 9.406 seconds (JVM running for 10.178)
+2021-07-21 16:35:23 [http-nio-9092-exec-2] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+				Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-21 16:35:23 [http-nio-9092-exec-2] INFO  o.s.web.servlet.DispatcherServlet -
+				Initializing Servlet 'dispatcherServlet'
+2021-07-21 16:35:23 [http-nio-9092-exec-2] INFO  o.s.web.servlet.DispatcherServlet -
+				Completed initialization in 2 ms
+2021-07-21 16:35:23 [http-nio-9092-exec-2] INFO  c.s.u.config.UniversityAspect -
+				new university is getting added
+2021-07-21 16:35:23 [http-nio-9092-exec-2] INFO  c.s.u.config.UniversityAspect -
+				new university is getting added
+2021-07-21 16:35:23 [http-nio-9092-exec-2] INFO  c.s.u.config.UniversityAspect -
+				client added university named NBS university of id u3442
+2021-07-21 16:35:23 [http-nio-9092-exec-2] INFO  c.s.u.config.UniversityAspect -
+				client added university named NBS university of id u3442
