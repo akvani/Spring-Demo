@@ -1,0 +1,52 @@
+2021-07-23 13:04:59 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.stackroute.universityapp.controller.UniversityControllerTest], using SpringBootContextLoader
+2021-07-23 13:04:59 [main] INFO  o.s.t.c.s.AbstractContextLoader -
+				Could not detect default resource locations for test class [com.stackroute.universityapp.controller.UniversityControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-07-23 13:04:59 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils -
+				Could not detect default configuration classes for test class [com.stackroute.universityapp.controller.UniversityControllerTest]: UniversityControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-07-23 13:04:59 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Found @SpringBootConfiguration com.stackroute.universityapp.UniversityappApplication for test class com.stackroute.universityapp.controller.UniversityControllerTest
+2021-07-23 13:04:59 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-07-23 13:04:59 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -
+				Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1e4d3ce5, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@3ddc6915, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@704deff2, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@379614be, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@404bbcbd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1e81f160, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1acaf3d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6986852, org.springframework.test.context.event.EventPublishingTestExecutionListener@1bab8268, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@a307a8c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6e01f9b0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2b9ed6da, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6c61a903, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@658c5a19, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@421e361]
+2021-07-23 13:04:59 [main] INFO  c.s.u.c.UniversityControllerTest -
+				Starting UniversityControllerTest using Java 1.8.0_261 on BLR-STR-MARY with PID 18000 (started by Mary.Rani in E:\01-IBM-Java-PT\spring-sample\springbootsample\universityapp)
+2021-07-23 13:04:59 [main] INFO  c.s.u.c.UniversityControllerTest -
+				No active profile set, falling back to default profiles: default
+2021-07-23 13:05:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+				Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-23 13:05:00 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -
+				Finished Spring Data repository scanning in 58 ms. Found 2 JPA repository interfaces.
+2021-07-23 13:05:01 [main] INFO  o.h.jpa.internal.util.LogHelper -
+				HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-23 13:05:01 [main] INFO  org.hibernate.Version -
+				HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-23 13:05:01 [main] INFO  o.h.annotations.common.Version -
+				HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-23 13:05:01 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Starting...
+2021-07-23 13:05:02 [main] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Start completed.
+2021-07-23 13:05:02 [main] INFO  org.hibernate.dialect.Dialect -
+				HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-07-23 13:05:03 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -
+				HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-23 13:05:03 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -
+				Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-23 13:05:03 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -
+				spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-23 13:05:04 [main] INFO  c.s.u.c.UniversityControllerTest -
+				Started UniversityControllerTest in 4.885 seconds (JVM running for 5.957)
+2021-07-23 13:05:04 [main] INFO  o.s.mock.web.MockServletContext -
+				Initializing Spring TestDispatcherServlet ''
+2021-07-23 13:05:04 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				Initializing Servlet ''
+2021-07-23 13:05:04 [main] INFO  o.s.t.w.s.TestDispatcherServlet -
+				Completed initialization in 0 ms
+2021-07-23 13:05:04 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -
+				Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-23 13:05:04 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown initiated...
+2021-07-23 13:05:04 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -
+				HikariPool-1 - Shutdown completed.

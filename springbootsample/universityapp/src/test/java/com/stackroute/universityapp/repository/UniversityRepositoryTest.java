@@ -14,37 +14,37 @@ import com.stackroute.universityapp.model.University;
 
 import junit.framework.Assert;
 
-@RunWith(SpringRunner.class)
-@DataJpaTest
-@AutoConfigureTestDatabase(replace=AutoConfigureTestDatabase.Replace.NONE)
-
-public class UniversityRepositoryTest {
-	
-	
-	@Autowired
-	UniversityRepo repo;
-	
-	University universe;
-	
-	
-	@Before
-	public void setup()
-	{
-		universe =new University();
-	    universe.setUniversityid("888");
-	    universe.setUniversityname("Anna university");
-			
-	}
-	
-
-	@Test
-	public void adduniversity()
-	{
-		repo.save(universe);
-	Optional<University> uobj=repo.findById("888");
-	
-	Assert.assertEquals("Anna university" , uobj.get().getUniversityname());
-	
-		
-	}
-}
+//@RunWith(SpringRunner.class)
+//@DataJpaTest
+//@AutoConfigureTestDatabase(replace=AutoConfigureTestDatabase.Replace.NONE)
+//
+//public class UniversityRepositoryTest {
+//	
+//	
+//	@Autowired
+//	UniversityRepo repo;
+//	
+//	University universe;
+//	
+//	
+//	@Before
+//	public void setup()
+//	{
+//		universe =new University();
+//	    universe.setUniversityid("888");
+//	    universe.setUniversityname("Anna university");
+//			
+//	}
+//	
+//
+//	@Test
+//	public void adduniversity()
+//	{
+//		repo.save(universe);
+//	Optional<University> uobj=repo.findById("888");
+//	
+//	Assert.assertEquals("Anna university" , uobj.get().getUniversityname());
+//	
+//		
+//	}
+//}
