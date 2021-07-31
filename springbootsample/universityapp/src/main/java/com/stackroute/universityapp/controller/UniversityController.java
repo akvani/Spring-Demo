@@ -19,6 +19,10 @@ import com.stackroute.universityapp.exception.UniversityNotFoundException;
 import com.stackroute.universityapp.model.University;
 import com.stackroute.universityapp.service.UniversityService;
 
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponses;
+import io.swagger.annotations.ApiResponse;
+
 @RestController
 @RequestMapping("/university")
 public class UniversityController {
@@ -58,6 +62,16 @@ public class UniversityController {
 		List<University> universities=userve.getallUniversitites();
 		return new ResponseEntity<List>(universities,HttpStatus.OK);
 	}
+	
+	
+	@ApiOperation(value="delete",response=Iterable.class)
+	@ApiResponses(
+			value= {
+					
+					@ApiResponse(code=200,message="University record is deleted"),
+					@ApiResponse(code=404,message="University id is invalid hence no records deleted")
+			}
+			)
 	
 	@DeleteMapping ("/deleteuniversity/{paramid}")
 	

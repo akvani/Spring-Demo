@@ -17,6 +17,9 @@ import com.stackroute.ecommerce.exception.CustomerNotFoundException;
 import com.stackroute.ecommerce.model.Customer;
 import com.stackroute.ecommerce.service.CustomerService;
 
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+
 @RestController
 @RequestMapping("ecom/customer")
 public class CustomerController {
@@ -25,6 +28,7 @@ public class CustomerController {
 	@Autowired
 	CustomerService cservice;
 	
+	@ApiOperation("Used to add a new customer  or  new Items for existing customer")
 	@PostMapping("/addCustomer")
 	public ResponseEntity<?> savecustomer(@RequestBody Customer customer)
 	{

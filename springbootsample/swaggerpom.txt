@@ -9,11 +9,11 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.stackroute</groupId>
-	<artifactId>universityapp</artifactId>
+	<artifactId>RESPJPA</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>universityapp</name>
+	<name>RESPJPA</name>
 	<description>Demo project for Spring Boot</description>
-	<properties>
+<properties>
 		<java.version>1.8</java.version>
 	</properties>
 	<dependencies>
@@ -26,24 +26,13 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 		
-		
-		      <dependency>
-    <groupId>io.springfox</groupId>
-    <artifactId>springfox-swagger-ui</artifactId>
-    <version>2.9.2</version>
+    <dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.21</version>
 </dependency>
 
- <dependency>
-    <groupId>io.springfox</groupId>
-    <artifactId>springfox-swagger2</artifactId>
-    <version>2.9.2</version>
-</dependency>
-		
-	<!-- AOP -->
-		<dependency>
-		<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-aop</artifactId>
-		</dependency>
+<!-- AOP  -->
 <!-- https://mvnrepository.com/artifact/org.aspectj/aspectjweaver -->
 <dependency>
     <groupId>org.aspectj</groupId>
@@ -67,55 +56,55 @@
 </dependency>
 
 
-	<!-- AOP -->
 
-	<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.17</version>
-		</dependency>
-      
+	
+<!-- Swagger -->
+<!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui -->
 
+ 
+<dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger-ui</artifactId>
+    <version>2.9.2</version>
+</dependency>
+
+ <dependency>
+    <groupId>io.springfox</groupId>
+    <artifactId>springfox-swagger2</artifactId>
+    <version>2.9.2</version>
+</dependency>
+
+<!-- testing -->
+
+<!-- https://mvnrepository.com/artifact/junit/junit -->
+		 <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>1.10.19</version>
+        </dependency>    
+        
+           <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13</version>
+        </dependency>
 
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-			
-			
+			<exclusions>
+				<exclusion>
+					<groupId>org.junit.vintage</groupId>
+					<artifactId>junit-vintage-engine</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
-		
-		
-		<dependency>
-			<groupId>org.junit.platform</groupId>
-			<artifactId>junit-platform-surefire-provider</artifactId>
-			<version>1.1.0</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-engine</artifactId>
-			<version>5.1.0</version>
-		</dependency>
-
-	
-
-		<dependency>
-			<groupId>org.junit.platform</groupId>
-			<artifactId>junit-platform-launcher</artifactId>
-			<version>1.1.0</version>
-			<scope>test</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-api</artifactId>
-			<version>5.5.0</version>
-			<scope>test</scope>
-		</dependency>
-		
-		
 	</dependencies>
 
 	<build>

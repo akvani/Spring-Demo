@@ -8,6 +8,8 @@ import javax.persistence.OneToMany;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import io.swagger.annotations.ApiModelProperty;
+
 @Entity
 public class University {
 	
@@ -15,6 +17,7 @@ public class University {
 	@Id
 	String universityid;
 	
+	@ApiModelProperty(notes="representing university name, expand and pass value")
 	String universityname;
 	
 	@OneToMany

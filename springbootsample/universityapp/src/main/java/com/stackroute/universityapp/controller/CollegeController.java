@@ -15,6 +15,8 @@ import com.stackroute.universityapp.exception.CollegeIdAlreadyExistException;
 import com.stackroute.universityapp.model.College;
 import com.stackroute.universityapp.service.CollegeService;
 
+import io.swagger.annotations.ApiOperation;
+
 @RestController
 @RequestMapping("/college")
 public class CollegeController {
@@ -22,6 +24,7 @@ public class CollegeController {
 	@Autowired
 	CollegeService cservice;
 	
+	@ApiOperation("Use to add new college ")
 
 	
 	@PostMapping("/addCollege")
