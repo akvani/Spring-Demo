@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.stackroute.ecommerce.exception.CustomerNotFoundException;
 import com.stackroute.ecommerce.model.Customer;
+import com.stackroute.ecommerce.model.Movie;
 
 public interface CustomerService {
 
@@ -18,5 +19,6 @@ public interface CustomerService {
 	boolean deleteItem(String customerid,String itemid) throws CustomerNotFoundException;
 		
 	
+	void addMovie(Movie movie);
 	
 }

@@ -1,0 +1,27 @@
+version: '3'
+services:
+  mysql:
+    image: mysql:latest
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: myproject
+      MYSQL_MYURL: jdbc:mysql://localhost:3306/testdb?createDatabaseIfNotExist=true&user=root&password=password
+
+  mongo:
+    image: mongo
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_URL: mongodb://localhost:27017/ibmecomdb
+   
+
+  ecommerceapp:
+    image: maryrani/ecommerceibm 
+    restart: always
+    ports:
+      - 9095:9095
+    depends_on:
+      - mongo
+   

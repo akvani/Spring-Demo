@@ -1,0 +1,7 @@
+FROM java:8-jre
+WORKDIR usr/src
+ADD ./target/ecommerce-0.0.1-SNAPSHOT.jar /usr/src/ecommerce-0.0.1-SNAPSHOT.jar
+
+ENV MONGO_URL=mongodb://localhost:27017/bootcampmongo
+
+ENTRYPOINT ["java","-jar","ecommerce-0.0.1-SNAPSHOT.jar"]

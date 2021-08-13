@@ -11,13 +11,19 @@ import org.springframework.stereotype.Service;
 import com.stackroute.ecommerce.exception.CustomerNotFoundException;
 import com.stackroute.ecommerce.model.Customer;
 import com.stackroute.ecommerce.model.Item;
+import com.stackroute.ecommerce.model.Movie;
 import com.stackroute.ecommerce.repository.CustomerRepo;
+import com.stackroute.ecommerce.repository.MovieRepo;
 
 @Service
 public class CustomerServiceImpl implements CustomerService{
 
 	@Autowired
 	CustomerRepo crepo;
+	
+	
+	@Autowired
+	MovieRepo mrepo;
 	
 	@Override
 	public Customer addCustomer(Customer newcust) {
@@ -123,6 +129,12 @@ List<Customer> customers=crepo.findByCity(cty);
 		throw new CustomerNotFoundException();
 		
 		
+	}
+
+	@Override
+	public void addMovie(Movie movie) {
+		 
+		mrepo.save(movie);
 	}
 	
 	
